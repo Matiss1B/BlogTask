@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@590&family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+$main-color: #0c6104;
+$secondGreen: #3e9237;
+$blogBackgroundColor: rgb(44, 43, 43);
+$mainBoxShadow: rgba(90, 90, 90, 0.35) 0px 5px 15px;
+$blogGrey: rgb(117, 115, 115);
+$blogName: "Pacifico", cursive;
+$font1: "Oswald", sans-serif;
+$font2: "Open Sans", sans-serif;
+
+.main-div {
+  padding-top: 10rem;
+}
+.main-div h1 {
+  color: $secondGreen;
+  font-family: $blogName;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+.main-input-box {
+  background-color: $blogBackgroundColor;
+  padding: 1rem;
+  box-shadow: $mainBoxShadow;
+}
+textarea {
+  font-size: 1.2rem;
+  font-family: $font1;
+  color: white;
+  background-color: $blogBackgroundColor;
+  border: none;
+  border-bottom: 1px solid $blogGrey;
+}
+.main-input-box input {
+  font-size: 1.2rem;
+  font-family: $font1;
+  color: white;
+  background-color: $blogBackgroundColor;
+  border: none;
+  border-bottom: 1px solid $blogGrey;
+}
+.main-input-box a {
+  font-family: $font1;
+  color: $secondGreen;
+  text-align: center;
+  cursor: pointer;
+  width: 50px;
+}
+.main-input-box a:hover {
+  color: $main-color;
+}
+input::placeholder {
+  color: white;
+}
+textarea::placeholder {
+  color: white;
+}
+@media screen and (max-width: 800px) {
+  .mini-blog {
+    padding: 0rem;
+  }
+}

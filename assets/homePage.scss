@@ -1,0 +1,257 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@590&family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+$main-color: #0c6104;
+$secondGreen: #3e9237;
+$blogBackgroundColor: rgb(44, 43, 43);
+$mainBoxShadow: rgba(90, 90, 90, 0.35) 0px 5px 15px;
+$blogGrey: rgb(117, 115, 115);
+$blogName: "Pacifico", cursive;
+$font1: "Oswald", sans-serif;
+$font2: "Open Sans", sans-serif;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+.header {
+  position: fixed;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+  z-index: 10;
+}
+.content {
+  gap: 4rem;
+}
+.header-content:hover {
+  cursor: pointer;
+  color: $main-color;
+}
+.header img {
+  width: 6rem;
+  height: 6rem;
+}
+.header-content {
+  font-size: 3rem;
+  color: $secondGreen;
+}
+.header a {
+  font-size: 2rem;
+  color: $secondGreen;
+  font-family: $font1;
+  text-decoration: none;
+}
+.header i:hover {
+  color: $main-color;
+  cursor: pointer;
+}
+.section1 {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("img/homePage.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+}
+.section1-content {
+  align-items: center;
+}
+.section1-content h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 5rem;
+  color: white;
+  font-family: $blogName;
+}
+.section2 {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(20, 20, 20);
+  box-sizing: border-box;
+}
+.section2 h1 {
+  font-family: $blogName;
+  font-size: 4rem;
+  color: $secondGreen;
+  margin-top: 10rem;
+}
+.section2-content {
+  align-items: center;
+  gap: 2rem;
+}
+.blog {
+  width: 50%;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 10px;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  font-family: $font2;
+  background-color: $blogBackgroundColor;
+  box-shadow: $mainBoxShadow;
+}
+.blogUser {
+  padding-left: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+  background-color: $blogGrey;
+  color: $secondGreen;
+  font-size: 1.5rem;
+}
+h2 {
+  color: $main-color;
+}
+
+.comment {
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+.hideBtn {
+  color: #3e9237;
+  cursor: pointer;
+}
+.hideBtn:hover {
+  color: white;
+}
+.all-comments {
+  display: none;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+.display {
+  display: flex;
+}
+.mainPic img {
+  width: 100%;
+}
+.imgs {
+  width: 100%;
+}
+.submit-comment {
+  border: 1px solid black;
+  padding: 5px;
+  color: black;
+  border-radius: 15px;
+  background-color: $secondGreen;
+}
+.submit-comment:hover {
+  color: white;
+  border: 1px solid white;
+}
+.none {
+  display: none;
+}
+.gallery {
+  justify-content: center;
+  gap: 10px;
+  padding: 1rem;
+}
+.description {
+  color: white;
+  font-size: 1.2rem;
+}
+.gallery img {
+  height: 100px;
+}
+.gallery img:hover {
+  outline: 1px solid white;
+}
+.comment input {
+  background-color: $blogBackgroundColor;
+  color: white;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-family: $font1;
+  font-size: 1.3rem;
+  border-radius: 15px;
+  height: 2rem;
+  width: 15rem;
+  border: solid $blogGrey;
+}
+.comment p {
+  color: $secondGreen;
+}
+.comment i:hover {
+  color: $main-color;
+}
+.singleComment {
+  color: white;
+}
+.singleComment a {
+  color: $main-color;
+}
+.more-comments-btn {
+  color: $secondGreen;
+  font-size: 1.5rem;
+}
+.more-comments-btn:hover {
+  color: white;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbox-y {
+  overflow-y: scroll;
+  height: 300px;
+}
+.scrollbox-x {
+  overflow-x: scroll;
+  width: 100%;
+}
+
+ul {
+  list-style: none outside none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+li {
+  display: block;
+  float: left;
+  margin-right: 6px;
+  cursor: pointer;
+}
+.comment-content {
+  gap: 1rem;
+}
+.comment i {
+  color: $secondGreen;
+  font-size: 2rem;
+}
+// #slideshow {
+//   position: relative;
+//   width: 500px;
+//   height: 500px;
+// }
+
+// #slideshow > div {
+//   position: absolute;
+// }
+// .section-landscape {
+//   background-image: url("img/landscape.png");
+//   width: 100vw;
+//   height: 100vh;
+// }
+@media screen and (max-width: 1000px) {
+  .content {
+    gap: 1rem;
+  }
+  .header a {
+    font-size: 1.3rem;
+  }
+  .blog {
+    width: 90%;
+  }
+}
